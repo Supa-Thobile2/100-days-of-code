@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="nav">
+    <div class="logo">
+      <img src="images/logo.svg" alt="logo">
+    </div>
+    <div class="menu-item">
+      <ul>
+        <li class="down-arrow">Features <img src="images/icon-arrow-down.svg" alt=""></li>
+      <ul>
+        <li class="down-arrow"> Company<img src="images/icon-arrow-down.svg" alt=""></li>
+        <li>Careers</li>
+        <li>About</li>
+      </ul>
+    </div>
+    <div class="login">
+      <button class="login-button">Login</button>
+      <button> Register</button>
+    </div>
+  </div>
+
+<div class="nav-mobile">
+  <div class="logo">
+    <img src="images/logo.svg" alt="logo">
+  </div>
+<div class="mobile-icon" onclick="toggleMenu()">
+  <span></span>
+  <span></span>
+  <span></span>
+  <div class="nav-mobile-links" onclick="toggleMenu()" >
+    <ul >
+      <li onclick="toggleMenu()"><a href="">Features</a> <img src="images/icon-arrow-down.svg" alt=""></li>
+      <li onclick="toggleMenu()"><a href="">Company</a> <img src="images/icon-arrow-down.svg" alt=""></li>
+      <li  onclick="toggleMenu()"><a href="">Careers</a></li>
+      <li  onclick="toggleMenu()"><a href="">About</a></li>
+    </ul>
+
+    <div class="mobile-login">
+      <button class="login-button">Login</button>
+      <button> Register</button>
+    </div>
+  </div>
+
+</div>
+
+</div>
+
+
+  <section class="main">
+    <section class="right">
+
+      <h2>Make <span>remote work</span> </h2>
+
+      <p>Get your team in sync, no matter your location. Streamline processes, 
+        create team rituals, and watch productivity soar.</p>
+
+      <button>Learn more</button>
+
+      <div class="clients">
+        <img src="images/client-databiz.svg" alt="">
+        <img src="images/client-audiophile.svg" alt="">
+        <img src="images/client-meet.svg" alt="">
+        <img src="images/client-maker.svg" alt="">
+      </div>
+
+    </section>
+    <section class="left">
+        <img src="images/image-hero-desktop.png" alt="">
+    
+
+    </section>
+  </section>
+
+  
+ 
+  
+  
+
+  
+ 
+
+  
+
+  
+
+  
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>

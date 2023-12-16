@@ -1,0 +1,397 @@
+@import url('https://fonts.google.com/specimen/Inter');
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 17vh;
+    margin: 10px 20px;
+}
+
+.nav .logo{
+    width: 200px;
+    flex: 1;
+}
+
+.menu-items ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.menu-items ul li{
+    list-style: none;
+    margin: 20px;
+}
+
+/*********************Hamburger************************/
+
+.hamburger-menu{
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    }
+    
+    .menu-icon{
+        display: flex;
+        justify-content: space-between;
+        justify-content: center;
+        flex-direction: column;
+        width: 25px;
+        height: 24px;
+        margin-right: 20px;
+    
+    }
+    
+    .menu-icon span{
+        width: 100%;
+        border: 2px solid #000;
+        margin: 2px;
+    }
+
+.main{
+    display: flex;
+    justify-content: center;
+    
+    margin: 30px;
+    padding: 10px 30px;
+    gap: 20px;
+    
+}
+
+
+
+.right img{
+    width: 100%;
+    height: 380px;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    flex-basis: 30%;
+ 
+   
+}
+
+/* .info{
+    height: 100vh;
+} */
+
+.content h2{
+    font-size: 45px;
+    
+    
+    font-weight:800 ;
+    
+}
+
+.clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* margin: 20px; */
+    padding: 10px 40px;
+    
+}
+
+.clients-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 40px; */
+    /* padding: 40px; */
+    
+}
+
+
+.info button{
+    width: 200px;
+    background-color: hsl(5, 85%, 63%);
+    color:hsl(36, 100%, 99%) ;
+    margin: 10px 20px;
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    
+}
+
+.info button:hover{
+background-color:hsl(240, 100%, 5%) ;
+cursor: pointer;
+}
+
+.left{
+    background-color:hsl(240, 100%, 5%);
+    color: hsl(36, 100%, 99%);
+    margin: 0 10px;
+    padding: 10px 10px;
+   
+    /* width: 800px; */
+    
+   
+    
+}
+
+.left h1{
+color:hsl(35, 77%, 62%) ;
+padding: 5px 15px;
+margin: 5px;
+}
+
+.left p{
+    color:hsl(236, 13%, 42%) ;
+    margin: 5px 10px;
+    padding: 5px 10px;
+    line-height: 100%;    
+}
+
+hr{
+width: 80%;
+}
+
+.hydo,.AI,.vc{
+    padding: 20px 5px;
+}
+
+
+
+.hydo h3{
+    font-size: 16px;
+    padding: 10px 15px;
+    margin: 5px;
+}
+
+.hydo p{
+    font-size:18px ;
+    padding: 10px 15px;
+    margin: 5px;
+   
+}
+
+
+    
+
+
+
+.AI h3{
+    font-size: 16px;
+    padding: 10px 15px;
+    margin: 5px;
+}
+
+.AI p{
+    font-size: 16px;
+    padding: 10px 15px;
+    margin: 5px;
+}   
+
+
+.vc h3{
+    font-size: 16px;
+    padding: 10px 15px;
+    margin: 5px;
+}
+
+.vc p{
+    font-size: 16px;
+    padding: 10px 15px;
+    margin: 5px;
+    
+}
+
+.client-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin: 0 20px;
+ 
+    
+}
+
+.client-1 img{
+    width: 100px;
+}
+
+.info{
+    width: fit-content;
+}
+
+.info p{
+    padding-right: 5px;
+    margin-right: 20px;
+color: hsl(236, 13%, 42%);
+    
+}
+
+.info button{
+margin: 10px 20px;  
+}
+
+.number{
+    color:hsl(233, 8%, 79%) ;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.info-1 p{
+    color: hsl(236, 13%, 42%);
+    font-size: 14px;
+}
+
+
+
+@media (max-width: 600px) {
+
+    .nav{
+        display: none;
+    }
+
+    .hamburger-menu{
+        display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 17vh;
+   
+    }
+    .main{
+        display: block;
+        margin: 2px;
+        padding: 2px;
+    }
+     .right{
+        margin: 0;
+        padding: 0;
+     }
+     .left{
+        
+   
+        padding: 10px;
+
+        margin: 10px 0;
+        
+      
+       
+        
+    }
+
+    .left h1{
+padding:0;
+margin: 0;
+    }
+
+    hr{
+        width: 100%;
+    }
+
+    .hydo{
+        padding: 5px;
+    }
+
+.hydo h3{
+   font-size: 15px; 
+   padding:0;
+   margin: 0;
+}
+
+.hydo p{
+font-size: 12px;
+font-weight: 500;
+padding:0;
+margin: 0;
+
+}
+
+.AI{
+    padding: 10px 5px;
+}
+
+.AI h3{
+    font-size: 15px; 
+    padding:0;
+margin: 0;
+ }
+ 
+ .AI p{
+ font-size: 12px;
+ font-weight: 500;
+ padding:0;
+ margin: 0;
+
+ }                                                                                                                                                                                                                                                                                                                                                                  
+.vc{
+    padding: 10px 5px;
+}
+ .vc h3{
+    padding:0;
+    margin: 0;
+ }
+ 
+ .vc p{
+ font-size: 12px;
+ font-weight: 500;
+ padding:0;
+margin: 0;                                                                                                                                                                                                                                                                                                                                             
+ }
+
+
+.content{
+    flex-wrap: wrap;
+}
+
+.content h2{
+    margin-left: 5px;
+}
+
+
+.info p{
+    
+    margin: 5px;
+    
+}
+
+.info button{
+    
+    margin: 5px; 
+}
+
+.content h2{
+    font-size: 35px;
+    margin: 0;
+    padding: 8px 0;
+    
+    font-weight:800 ;
+    
+}
+
+.clients {
+margin: 0;
+padding: 8px;
+}
+
+     .right img{
+height: 220px;
+     }
+
+    .clients{
+        display: block;
+    }
+
+    .client-1{
+        
+        margin-bottom: 5px;
+        justify-content: unset;
+        gap: 16px;   
+        margin: 0;     
+    }
+
+   
+
+.info-1 p{
+font-size: 12px;
+}
+
+}

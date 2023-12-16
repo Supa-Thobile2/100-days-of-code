@@ -1,0 +1,470 @@
+@import url('https://fonts.google.com/specimen/Kumbh+Sans');
+
+/* *****************************************Menu*****************************************/
+
+/*********************Header************************/
+                                            body{
+
+    font-family: 'Kumbh Sans' ;
+}
+
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    height: 10vh;
+
+    
+margin-left: 20px;
+margin-right: 20px;
+padding-bottom: 10px;
+}
+
+/* hr{
+    width: 87.85%;
+} */
+
+/*********************Logo************************/
+.logo{
+/* padding: 10px; */
+margin-left: 80px;
+/* flex: 1; */
+}
+
+.logo img{
+width: 100px;
+margin: 10px;
+}
+
+
+/*********************Menu list************************/
+
+.list{
+    /* width: 400px; */
+    flex: 1; 
+    
+}
+
+/*********************Side************************/
+
+
+.side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex: flex-end; */
+    padding-right: 30px;
+  
+}
+
+.list ul{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: inherit;
+    
+    
+    
+}
+
+.list ul li{
+    list-style: none;
+    /* padding: 10px;
+    margin: 10px; */
+   margin: 10px;
+
+   color: hsl(219, 9%, 45%);
+}
+
+/*********************Hamburger************************/
+
+.hamburger-menu{
+display: none;
+position: relative;
+justify-content: space-between;
+align-items: center;
+/* justify-content: center; */
+}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+.menu-icon{
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    flex-direction: column;
+    width: 45px;
+    height: 24px;
+    margin-right: 20px;
+
+}
+
+.hamburger-menu-links{
+    position: absolute;
+    top: 100%;
+    max-height: 0;
+    height: 100vh;
+    width: fit-content;
+    left: 0;
+    background-color: white;
+    overflow: hidden;
+    list-style: none;
+    transition: all 0.3s ease-in-out;
+}
+/* .hamburger-menu-links ul{
+    height: 1440px;
+} */
+
+.hamburger-menu-links a{
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #000;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.hamburger-menu-links li{
+    list-style: none;
+}
+
+.menu-icon span{
+    width: 100%;
+    background-color: #000;
+    
+    border: 2px solid hsl(219, 9%, 45%);
+    margin: 2px;
+    height: 2px;
+    transition: all 0.3s ease-in-out;
+}
+
+.hamburger-menu-links.open{
+    max-height: 300px;
+}
+
+.menu-icon.open span:first-child{
+    transform: rotate(45deg) translate(10px, 5px);
+
+}
+
+.menu-icon.open span:nth-child(2){
+   opacity: 0;
+
+}
+.menu-icon.open span:last-child{
+    transform: rotate(-45deg) translate(10px, -5px);
+
+}
+
+.menu-icon span:first-child{
+    transform: none;
+
+}
+.menu-icon span:nth-child(2){
+    opacity: 1;
+}
+.menu-icon span:last-child{
+    transform: none;
+}
+
+/* .section{
+display: flex;
+} */
+
+
+
+
+/*********************Section************************/
+
+.section{
+    width:fit-content;
+    height: calc(100% - 17vh);
+  
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    
+    /* margin: 0 auto; */
+   
+  
+    /* flex-basis: 50%; */
+
+    padding: 10px 60px;
+    /* margin: 0 10px; */
+   
+ }
+
+/*********************right************************/
+
+.right{  
+     width: 100%;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+    padding: 10px 40px;
+   
+   
+
+margin: 0 auto;
+
+
+   
+                       
+
+}
+
+.right-mobile{
+    display: none;
+}
+
+.central-img{
+    width: fit-content;
+}
+
+
+
+
+.central-img img{
+    width: 360px;
+    border: none;
+    border-radius: 5%;
+    
+    
+    
+    }
+    
+    .btm-img{
+        display:flex;
+        /* width: 100%;                                                                                                                                                                            */
+    }
+    
+    .btm-img img{
+        width: 75px;
+        border: none;
+    border-radius: 5%;
+    margin: 8px;
+        
+    }
+
+
+/*********************left************************/
+ 
+ .left{
+    
+    width: 100%;
+   
+    
+    
+    
+ }
+ 
+ 
+ .left h6{
+ color: hsl(26, 100%, 55%) ;
+ text-transform: uppercase;
+ 
+
+ }
+ 
+ .left h2{
+     font-size: 30px;
+     margin-left: 30px;
+     font-weight:bold;
+     color: hsl(0, 0%, 0%);
+     font-family: 'Courier New', Courier, monospace;
+ 
+ }
+ 
+ .left p{
+ font-size: 16px;
+ line-height: 15px;
+ color:  hsl(219, 9%, 45%);
+ text-align:left;
+
+ }
+
+
+ .left span{
+   display: inline-block;
+   
+    color:hsl(220, 14%, 75%) ;
+text-decoration: line-through; 
+text-align: center;  
+ }
+.side img{
+padding: 10px;
+
+}
+
+.avatar{
+    width: 35px;
+}
+.icon{
+    width: 20px;
+    padding: 30px;
+    margin: 20px;
+
+   
+}
+
+.tags{
+    margin-left: 10px;
+}
+
+.tags p.price{
+    display: inline-block;
+    color: hsl(0, 0%, 0%);
+font-size: 20px;
+font-weight: 700;
+
+   
+    
+}
+
+.tags p.discount{
+    display: inline-block;
+  background: hsl(25, 100%, 94%);
+  border-radius: 3px;
+    color:hsl(26, 100%, 55%) ;
+}
+
+
+
+.left span{
+    margin: 10px;
+    padding: 10px;
+}
+
+.btn{
+    width: fit-content;
+display: flex;
+align-content:space-between;
+align-items: center;
+padding:5px 5px;
+margin: 40px;
+
+
+}
+
+.btn div{
+width: 100%;
+
+}
+
+.btn-1{
+    display: flex;
+    width: 400px;
+
+
+    
+}
+
+.btn-1 button{
+
+color: hsl(26, 100%, 55%);
+background-color:hsl(223, 64%, 98%) ;
+border: none;
+border-radius: 5%;
+font-size: 30px;
+
+}
+
+.btn-2 button{
+    width: 250px;
+padding: 15px;
+background-color: hsl(26, 100%, 55%);
+border-radius: 10px;
+color: hsl(0, 0%, 100%);
+border: none;
+
+
+}
+
+.btn-2 button:hover{
+background:hsl(25, 100%, 94%) ;
+cursor: pointer;
+}
+
+
+.btn-2 img{
+width: 15px;
+margin-right: 10px;
+}
+
+
+
+
+
+@media (max-width: 600px) {
+    .hamburger-menu{
+        display: flex;
+        
+        
+        }
+
+        .nav{
+            display: none;
+        }
+
+
+        .hamburger-menu-icon{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+        }
+
+        .hamburger-menu-logo img{
+            width: 90px;
+        }
+
+
+        .section{
+            display:block;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .right{
+            display: none;
+        }
+
+        .right-mobile{
+            display: block;
+            padding: 0;
+            width: 100%;
+            
+        }
+
+        .central-img{
+            width: 100%;
+        }
+
+        .central-img img{
+            width: 100%;
+        }
+
+        .left{
+            padding: 2px;
+            margin: 5px;
+        }
+
+        .left h2{
+            font-size: 20px;
+            margin: 5px;
+        }
+
+        .left p{
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 2px;
+        }
+
+        .btn{
+           display: block; 
+           margin: 0px;
+        }
+}
